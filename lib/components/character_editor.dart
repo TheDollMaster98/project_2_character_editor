@@ -16,7 +16,7 @@ class CharacterStatEditorState extends State<CharacterStatEditor> {
 
   void incrementValue() {
     setState(() {
-      value >= 100 ? value = 100 : value--;
+      value >= 100 ? value = 100 : value++;
     });
     print("Increased Button Pressed");
   }
