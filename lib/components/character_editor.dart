@@ -14,7 +14,6 @@ class CharacterStatEditor extends StatefulWidget {
 class CharacterStatEditorState extends State<CharacterStatEditor> {
   late int value;
 
-  // Questo è un metodo che viene chiamato quando il pulsante di incremento viene premuto. Aumenta il valore di 1.
   void incrementValue() {
     setState(() {
       value++;
@@ -22,7 +21,6 @@ class CharacterStatEditorState extends State<CharacterStatEditor> {
     print("Increased Button Pressed");
   }
 
-  // Questo è un metodo che viene chiamato quando il pulsante di decremento viene premuto. Diminuisce il valore di 1, a meno che non sia già 0.
   void decrementValue() {
     setState(() {
       value == 0 ? value = 0 : value--;
@@ -38,7 +36,8 @@ class CharacterStatEditorState extends State<CharacterStatEditor> {
 
   @override
   Widget build(BuildContext context) {
-    // ListTile è un widget che può essere utilizzato per presentare fino a tre righe di testo e icone all'inizio (leading) e alla fine (trailing).
+    // ListTile è un widget che può essere utilizzato per presentare
+    // fino a tre righe di testo e icone all'inizio (leading) e alla fine (trailing).
     // È comunemente usato per liste, drawer e altri luoghi che richiedono un layout simile a una lista.
     return ListTile(
       leading:
