@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
       body: const Column(
         children: [
           CharacterStatEditor(label: "Forza", initialValue: 2),
-          CharacterStatEditor(label: "Resistenza", initialValue: 10),
+          CharacterStatEditor(label: "Difesa", initialValue: 10),
           CharacterStatEditor(label: "Agilità", initialValue: 7),
         ],
       ),

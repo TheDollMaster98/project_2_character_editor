@@ -29,16 +29,14 @@ class CharacterStatEditorState extends State<CharacterStatEditor> {
   }
 
   void resetValue() {
+    // Imposta il valore del widget al valore iniziale.
+    // I widget sono elementi fondamentali di Flutter
+    // ti permettono di creare una UI reattiva e personalizzabile.
+    // Utilizzando i widget, l'UI posso renderla modulare.
     setState(() {
-      value = 0;
+      value = widget.initialValue;
     });
     print("Reset Button Pressed");
-  }
-
-  @override
-  void initState() {
-    value = widget.initialValue;
-    super.initState();
   }
 
   @override
@@ -81,6 +79,10 @@ class CharacterStatEditorState extends State<CharacterStatEditor> {
               size: 16,
               color: Colors.red,
             ),
+          ),
+          ElevatedButton(
+            onPressed: resetValue,
+            child: Text('Reset'),
           ),
         ],
       ),
