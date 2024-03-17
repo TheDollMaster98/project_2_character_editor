@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.purple,
         title: const Text(
-          "Crea il tuo personaggio",
+          "Crea il tuo personaggio.",
           style: TextStyle(fontSize: 30),
         ),
         centerTitle: true,
@@ -20,6 +20,13 @@ class HomePage extends StatelessWidget {
       // di testo e icone opzionali a sinistra (leading) e a destra (trailing).
       body: const Column(
         children: [
+          Text(
+            "Tank:",
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
           CharacterStatEditor(label: "Forza", initialValue: 2),
           CharacterStatEditor(label: "Difesa", initialValue: 10),
           CharacterStatEditor(label: "Agilità", initialValue: 7),
