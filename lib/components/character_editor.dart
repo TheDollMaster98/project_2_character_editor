@@ -28,6 +28,13 @@ class CharacterStatEditorState extends State<CharacterStatEditor> {
     print("Decreased Button Pressed");
   }
 
+  void resetValue() {
+    setState(() {
+      value = 0;
+    });
+    print("Reset Button Pressed");
+  }
+
   @override
   void initState() {
     value = widget.initialValue;
@@ -68,8 +75,7 @@ class CharacterStatEditorState extends State<CharacterStatEditor> {
             ),
           ),
           ElevatedButton(
-            onPressed:
-                decrementValue, // Assicurati di chiamare il metodo giusto qui!
+            onPressed: decrementValue,
             child: const Icon(
               Icons.remove,
               size: 16,
