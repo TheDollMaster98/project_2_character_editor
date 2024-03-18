@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.purple,
         title: const Text(
-          "Crea il tuo personaggio.",
+          "Crea il tuo personaggio",
           style: TextStyle(fontSize: 30),
         ),
         centerTitle: true,
@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
       body: const Column(
         children: [
           Text(
-            "Tank:",
+            "Statistiche base:",
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,

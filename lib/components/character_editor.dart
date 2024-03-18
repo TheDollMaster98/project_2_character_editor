@@ -14,6 +14,15 @@ class CharacterStatEditor extends StatefulWidget {
 class CharacterStatEditorState extends State<CharacterStatEditor> {
   late int value;
 
+  // initState è un metodo che viene chiamato automaticamente da Flutter
+  // quando viene creato lo stato del widget. È un ottimo posto per eseguire
+  // l'inizializzazione dei dati che dipendono dal contesto del widget.
+  @override
+  void initState() {
+    super.initState();
+    value = widget.initialValue;
+  }
+
   void incrementValue() {
     setState(() {
       value >= 100 ? value = 100 : value++;
