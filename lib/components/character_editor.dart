@@ -20,6 +20,7 @@ class CharacterStatEditorState extends State<CharacterStatEditor> {
   @override
   void initState() {
     super.initState();
+    // accedo alla var di CharacterStatEditor
     value = widget.initialValue;
   }
 
